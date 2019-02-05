@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="twenty_four_hour_clock_constant">12</integer>
+    <integer name="widget_update_period_millis">21600000</integer>
+    <integer name="one">1</integer>
+    <integer name="year_constant">2000</integer>
+    <integer name="layout_weight_five">5</integer>
+    <integer name="layout_weight_zero">0</integer>
+</resources>

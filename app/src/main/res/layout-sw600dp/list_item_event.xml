@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_small"
+    app:cardElevation="@dimen/card_view_elevation">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/event_title_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/list_item_layout">
+
+            <TextView
+                android:id="@+id/circle_tv"
+                android:layout_width="@dimen/circle_text_view_width_height"
+                android:layout_height="@dimen/circle_text_view_width_height"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:gravity="center_vertical|center_horizontal" />
+
+            <TextView
+                android:id="@+id/event_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingEnd="@dimen/margin_small"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/event_details_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_title_linear_layout"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/event_title_linear_layout">
+
+            <LinearLayout
+                android:id="@+id/event_text_linear_layout"
+                android:layout_width="@dimen/zero_layout_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/layout_weight_five"
+                android:gravity="start"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margin_small"
+                android:paddingEnd="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/event_day_date_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:id="@+id/event_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/delete_favorite_button"
+                android:layout_width="@dimen/delete_favorite_button_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="@integer/layout_weight_zero"
+                android:contentDescription="@string/delete_favorite_icon_text"
+                android:src="@drawable/sharp_clear_black_48" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expansion_text_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_details_linear_layout"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/event_details_linear_layout">
+
+            <TextView
+                android:id="@+id/event_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_medium" />
+
+            <TextView
+                android:id="@+id/event_notes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size_medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expansion_button_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/expansion_text_linear_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expansion_text_linear_layout">
+
+            <Button
+                android:id="@+id/favorite_button"
+                style="@style/LandButtonStyle"
+                android:background="@drawable/favorite_button"
+                android:text="@string/favorite_button_text" />
+
+            <Button
+                android:id="@+id/website_button"
+                style="@style/LandButtonStyle"
+                android:background="@drawable/website_button"
+                android:text="@string/website_button_text" />
+
+            <Button
+                android:id="@+id/share_button"
+                style="@style/LandButtonStyle"
+                android:background="@drawable/share_button"
+                android:text="@string/share_button_text" />
+
+            <Button
+                android:id="@+id/calendar_button"
+                style="@style/LandButtonStyle"
+                android:background="@drawable/calendar_button"
+                android:text="@string/calendar_button_text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/expansion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@id/expansion_button_linear_layout"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/expansion_button_content_description"
+            android:stateListAnimator="@animator/lift_on_touch"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

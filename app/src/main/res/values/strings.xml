@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">NYC4Free Guide</string>
+    <!-- Text for error message display when there is no Internet connection. [CHAR LIMIT=25] -->
+    <string name="text_no_internet">No Internet connection</string>
+    <!-- Text for error message display when there are no event results returned.
+    [CHAR LIMIT=25] -->
+    <string name="text_no_events">No events to display</string>
+    <string name="text_no_favorites">No favorites to display</string>
+    <string name="no_browser_msg">Please install a browser to view website.</string>
+    <string name="no_calendar_msg">Please install a calendar to add event.</string>
+    <string name="no_share_msg">Please install a share app.</string>
+    <string name="saved_favorite_msg">This event has been saved as a favorite</string>
+    <string name="favorite_will_be_deleted">This favorite will be deleted</string>
+    <string name="delete_favorite_listener_error_msg">%1$s must implement DeleteFavoriteDialogListener.</string>
+    <string name="delete_favorite">OK, delete</string>
+    <string name="cancel_delete_favorite">Cancel</string>
+    <string name="website_button_text">Website</string>
+    <string name="calendar_button_text">Calendar</string>
+    <string name="share_button_text">Share</string>
+    <string name="favorite_button_text">Favorite</string>
+    <string name="action_share">Share</string>
+    <string name="event_location_text">Location: %1$s</string>
+    <string name="event_website_text">Event website: %1$s</string>
+    <string name="delete_favorite_icon_text">Delete this event from favorites.</string>
+    <string name="event_dow_month_date_time_text">%1$s, %2$s %3$s, %4$s</string>
+    <string name="event_day_time_text_view">%1$s, %2$s</string>
+    <string name="title_free_events">NYC4Free Guide : Free Events by Date</string>
+    <string name="title_always_free_events">"NYC4Free Guide : Always-Free</string>
+    <string name="title_favorites">"NYC4Free Guide : Favorites</string>
+    <string name="menu_title_free_events">Free Events by Date</string>
+    <string name="menu_title_always_free_events">Always-Free</string>
+    <string name="menu_title_favorites">Favorites</string>
+    <string name="expansion_button_content_description">Toggle to expand and collapse the event view.</string>
+    <string name="appwidget_text">NYC4Free Guide</string>
+    <string name="widget_empty_view_text">Click to view free events and save favorites</string>
+</resources>

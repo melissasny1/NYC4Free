@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "497517209314",
+    "firebase_url": "https://nyc4free-8fc3a.firebaseio.com",
+    "project_id": "nyc4free-8fc3a",
+    "storage_bucket": "nyc4free-8fc3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497517209314:android:cc6232d5db40d661",
+        "android_client_info": {
+          "package_name": "com.thenyc4free.gps1.nyc4free.free"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497517209314-4mlgji6v3diqdfjifr7f1odasn2jmu5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNPpGvL3Ll4bhM1H48eIdY8Fwo8R_Ov-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497517209314:android:8666c6294758cf75",
+        "android_client_info": {
+          "package_name": "com.thenyc4free.gps1.nyc4free.paid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497517209314-4mlgji6v3diqdfjifr7f1odasn2jmu5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNPpGvL3Ll4bhM1H48eIdY8Fwo8R_Ov-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
