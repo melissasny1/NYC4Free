@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
         <activity
             android:name="com.thenyc4free.gps1.nyc4free.MainActivity"
             android:launchMode="singleTop">
