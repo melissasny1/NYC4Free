@@ -19,3 +19,5 @@ APP FEATURES:
 - Shares information: the user can share any Event via social media.
 - Updates the user’s calendar: the app uses intents supported by the Calendar application to allow the user to add Events to their calendar.
 - Links the user directly to the website for each Event, for access to the most detailed information available from the Event provider. 
+
+PLEASE NOTE THAT A VALUE MUST BE SUPPLIED IN QUERYUTILS.JAVA, LINE 30 FOR EVENTS_URL_STRING IN ORDER FOR THE CODE TO RUN PROPERLY.
