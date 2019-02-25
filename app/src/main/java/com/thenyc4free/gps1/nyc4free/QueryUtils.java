@@ -27,7 +27,7 @@ import java.util.Scanner;
 final class QueryUtils {
 
     private static final String EVENTS_URL_STRING =
-            "http://d32ikbprgo6vn5.cloudfront.net/capstonev001.json";
+            "";
 
     private static final SimpleDateFormat mDateFormat = new SimpleDateFormat("yy/MM/dd");
 
