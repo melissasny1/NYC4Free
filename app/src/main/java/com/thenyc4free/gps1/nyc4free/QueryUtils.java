@@ -27,7 +27,7 @@ import java.util.Scanner;
 final class QueryUtils {
 
     private static final String EVENTS_URL_STRING =
-            "";
+         "https://s3.us-east-2.amazonaws.com/capstone.nyc4free.events/capstonev001.json";
 
     private static final SimpleDateFormat mDateFormat = new SimpleDateFormat("yy/MM/dd");
 
@@ -45,7 +45,7 @@ final class QueryUtils {
         try {
             eventsUrl = new URL(EVENTS_URL_STRING);
         } catch (MalformedURLException e) {
-            Log.e(MainActivity.LOG_TAG, "Error creating URL.", e);
+            Log.e(com.thenyc4free.gps1.nyc4free.MainActivity.LOG_TAG, "Error creating URL.", e);
         }
 
         if (eventsUrl == null) return null;
@@ -132,7 +132,7 @@ final class QueryUtils {
                 }
             }
         } catch (JSONException e) {
-            Log.e(MainActivity.LOG_TAG, "Error parsing JSON data. ", e);
+            Log.e(com.thenyc4free.gps1.nyc4free.MainActivity.LOG_TAG, "Error parsing JSON data. ", e);
             return null;
         }
 
